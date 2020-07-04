@@ -1,0 +1,422 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+/*@media handheld, only screen and (max-width: 480px) {
+body   
+{
+    background: #fff;
+    font-size: 2.0em;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #696969;    
+}
+}
+
+@media only screen and (min-width: 481px) {*/
+body   
+{
+    background: #b6b7bc;
+    font-size: 1.3em;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #696969;    
+}
+/*}*/
+
+a:link, a:visited
+{
+    color: #034af3;
+}
+
+a:hover
+{
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active
+{
+    color: #034af3;
+}
+
+p
+{
+    margin-bottom: 8px;
+    line-height: 1.4em;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color: #666666;
+    /*font-variant: small-caps;*/
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+h1
+{
+    font-size: 1.6em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-variant: small-caps;
+}
+
+h2
+{
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: 0px;
+}
+
+h3
+{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+h4
+{
+    font-size: 1.1em;
+    font-variant: small-caps;
+    margin-top: 5px;
+}
+
+h5, h6
+{
+    font-size: 1em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0px;
+}
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+/* Page & Footer widths are not fixed currently that can be added */
+.page
+{
+    /* width: 960px; */
+    background-color: #fff;    
+    margin: 10px auto 0px auto;
+    border: 1px solid #496077;
+}
+
+.header
+{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background: #4b6c9e;
+    width: 100%;
+}
+
+.header h1
+{
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px 0px 0px 10px;
+    color: #f9f9f9;
+    border: none;
+    line-height: 2em;
+    font-size: 2em;    
+}
+
+.main
+{
+    padding: 0px 12px;
+    margin: 12px 8px 8px 8px;
+    min-height: 420px;
+}
+
+.footer
+{
+    background-color:#3a4f63;    
+    color: #dde4ec;
+    padding: 0px 0px 0px 0px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: normal;    
+    /* width: 960px;
+    position:fixed;
+    bottom:0; */
+    width:100%;
+    border-bottom: 1px solid #496077;
+}
+
+
+/* MISC  
+----------------------------------------------------------*/
+
+.clear
+{
+    clear: both;
+}
+
+.title
+{
+    display: block;
+    float: left;
+    text-align: left;
+    width: auto;
+}
+
+.breadcrumb
+{
+    background: #b6b7bc;
+    font-size: .80em;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 2px;
+    color: #696969;
+}
+
+.logo
+{ 
+    font-size: 1.1em;
+    display: block;
+    text-align: left;
+    padding: 10px;
+    color: White;
+    float: left;
+    margin-top: 9px;
+}
+
+nav.hideSkiplink
+{
+    background-color:#3a4f63;
+    width:100%;
+    height: 40px;
+    color: #dde4ec;
+}
+
+nav ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 6px;
+    width: auto; 
+}
+
+nav ul li a, nav ul li a:visited
+{
+    background-color: #465c71;
+    border: 1px #4e667d solid;
+    color: #dde4ec;
+    display: block;
+    line-height: 1em;
+    padding: 4px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+    float: left;   
+}
+
+nav ul li a:hover
+{
+    background-color: #bfcbd6;
+    color: #465c71;
+    text-decoration: none;
+}
+
+nav ul li a:active
+{
+    background-color: #465c71;
+    color: #cfdbe6;
+    text-decoration: none;
+}
+
+.fullscreen
+{
+    float: right;
+}
+
+/* this works */
+#mainSection:-webkit-full-screen	{ width: 98%;height: 98%; overflow:auto  }
+#mainSection:-moz-full-screen { width: 100%;height: 100%; overflow:auto }
+#mainSection:fullscreen			{ width: 100%; height: 100% }
+/*#mainSection:-ms-full-screen		{ width: 100%; height: 100% }
+#mainSection:-o-full-screen		    { width: 100%; height: 100% }
+*/
+
+.fitToPage
+{
+    width: 95%;
+    border: solid;
+    border-width: 1px;
+}
+
+.keepFixedSize
+{
+    max-width: 95%;
+    width: 400px;
+    height: auto;
+    border: solid;
+    border-width: 1px;
+}
+
+.keepOriginalSize
+{
+    max-width: 95%;
+    height:auto;
+    border: solid;
+    border-width: 1px;
+}
+
+.HTML5LogoBig
+{
+    max-width: 80%;
+    height:auto;
+}
+
+.toggleMe
+{
+    display: none;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.toggleMeNoMargin
+{
+    display: none;
+    text-align: left;    
+}
+
+.toggleNextElement
+{
+    color: #034af3;            
+    text-decoration: none;
+}
+
+.toggleNextElement:hover
+{    
+    color: #465c71;
+    text-decoration: underline;
+}
+
+.smallSize
+{
+    font-size: smaller;
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+
+.code
+{
+    background-color: gainsboro;
+    font-family: monospace;
+    margin-top: 2px;    
+    white-space: pre-wrap;
+}
+
+/*.toggleNextElement span
+{
+    display: none;
+}
+
+.toggleNextElement:hover span
+{
+    display: inline;
+    position:absolute;
+    width:110px;
+    padding:5px 5px;
+    margin-left:10px;
+    z-index: 10;
+
+    background-color: #cfdbe6;    
+    text-decoration: none;   
+}
+*/
+
+/* simple css-based tooltip 
+.tooltip
+{
+    background-color:#000;    
+    border:1px solid #fff;    
+    padding:10px 15px;    
+    width:200px;    
+    display:none;    
+    color:#fff;    
+    text-align:left;    
+    font-size:12px;     
+    
+    -moz-box-shadow:0 0 10px #000;    
+    -webkit-box-shadow:0 0 10px #000;
+}
+
+::-webkit-validation-bubble-message { color: red; display:inline;     float:right; }
+*/
+
+input, button {
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+}
+
+input:required {
+	border: 1px solid red;
+}
+
+.alignTop
+{
+    vertical-align: top;
+}
+
+.alignCenter
+{
+    text-align: center;
+}
+
+.seperator
+{
+    border: 1px grey solid;
+    margin: 10px;
+}
+
+.mapDimension1
+{
+    width: 300px;
+    height: 300px;
+}
+
+.dragDropBin 
+{
+  background: gainsboro;
+  height: 50px;
+  width: 50px;
+  border: 2px solid #000;
+  position: relative;
+  margin-top: 0;
+  -khtml-user-drag: element;
+}
+
+.dragImage
+{
+    vertical-align: middle;
+    text-align: center;
+    height: 95%;
+    width: 95%;
+    -khtml-user-drag: element;
+}
+
+.workerDivFixed
+{
+    height: 150px;
+    border: 1px solid grey;
+    overflow: auto;
+    margin-top: 10px;
+}
+
+.canvasSample
+{
+    border: 1px solid grey;    
+}

@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1C565A46-F799-422A-B53D-7434C3308DD2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HTML5Samples</RootNamespace>
+    <AssemblyName>HTML5Samples</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Files\AudioSample.ogg" />
+    <Content Include="Files\VideoSample.mp4" />
+    <Content Include="Images\AudioVideoBrowserSupport.png" />
+    <Content Include="Images\CanvasBrowserSupport.png" />
+    <Content Include="Images\ChromeDeveloperTools.PNG" />
+    <Content Include="Images\DeprecatedTags.jpg" />
+    <Content Include="Images\DesktopBrowserSupport.png" />
+    <Content Include="Images\DragDropBrowserSupport.png" />
+    <Content Include="Images\FireFoxDeveloperTools.PNG" />
+    <Content Include="Images\FormFeaturesBrowserSupport.png" />
+    <Content Include="Images\GeoLocationBrowserSupport.png" />
+    <Content Include="Images\HTML5.png" />
+    <Content Include="Images\HTML5LogoSmall.png" />
+    <Content Include="Images\IEDeveloperTools.PNG" />
+    <Content Include="Images\MobileBrowserSupport.png" />
+    <Content Include="Images\OfflineAppBrowserSupport.png" />
+    <Content Include="Images\PageStructureNew.png" />
+    <Content Include="Images\PageStructureOld.png" />
+    <Content Include="Images\SampleUserAgentSwitcher.png" />
+    <Content Include="Images\SemanticElementsBrowserSupport.png" />
+    <Content Include="Images\ShowFullscreen.PNG" />
+    <Content Include="Images\SupportLegend.png" />
+    <Content Include="Images\TabletBrowserSupport.png" />
+    <Content Include="Images\WebSocketBrowserSupport.png" />
+    <Content Include="Images\WebStorageBrowserSupport.png" />
+    <Content Include="Images\WebWorkersBrowserSupport.png" />
+    <Content Include="InProgress.aspx" />
+    <Content Include="NavigateTo\AudioVideo.aspx" />
+    <Content Include="NavigateTo\AudioVideoSample.aspx" />
+    <Content Include="NavigateTo\Canvas.aspx" />
+    <Content Include="NavigateTo\CanvasSample.aspx" />
+    <Content Include="NavigateTo\DeviceSupport.aspx" />
+    <Content Include="NavigateTo\DragDropSample.aspx" />
+    <Content Include="NavigateTo\OfflineAppSample.aspx" />
+    <Content Include="NavigateTo\WebSocketSample.aspx" />
+    <Content Include="NavigateTo\WebStorage.aspx" />
+    <Content Include="NavigateTo\DragDrop.aspx" />
+    <Content Include="NavigateTo\Forms.aspx" />
+    <Content Include="NavigateTo\GeoLocation.aspx" />
+    <Content Include="NavigateTo\GeoLocationSample.aspx" />
+    <Content Include="NavigateTo\ToolsToStart.aspx" />
+    <Content Include="NavigateTo\Introduction.aspx" />
+    <Content Include="NavigateTo\MordenizrExample.aspx" />
+    <Content Include="NavigateTo\OfflineApp.aspx" />
+    <Content Include="NavigateTo\StructureSample.aspx" />
+    <Content Include="NavigateTo\Structure.aspx" />
+    <Content Include="NavigateTo\TableOfContents.aspx" />
+    <Content Include="NavigateTo\WebSocket.aspx" />
+    <Content Include="NavigateTo\WebStorageSample.aspx" />
+    <Content Include="NavigateTo\WebWorkers.aspx" />
+    <Content Include="NavigateTo\WebWorkersSample.aspx" />
+    <Content Include="Scripts\AudioVideo.js" />
+    <Content Include="Scripts\Canvas.js" />
+    <Content Include="Scripts\DragDrop.js" />
+    <Content Include="Scripts\GeoLocation.js" />
+    <Content Include="Scripts\OfflineApp.js" />
+    <Content Include="Scripts\Utilities.js" />
+    <Content Include="Scripts\WebSocket.js" />
+    <Content Include="Scripts\WebStorage.js" />
+    <Content Include="Scripts\WebWorker.js" />
+    <Content Include="Scripts\WebWorkerSample.js" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Test.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="InProgress.aspx.cs">
+      <DependentUpon>InProgress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InProgress.aspx.designer.cs">
+      <DependentUpon>InProgress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NavigateTo\AudioVideo.aspx.cs">
+      <DependentUpon>AudioVideo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NavigateTo\AudioVideo.aspx.designer.cs">
+      <DependentUpon>AudioVideo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NavigateTo\AudioVideoSample.aspx.cs">
+      <DependentUpon>AudioVideoSample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NavigateTo\AudioVideoSample.aspx.designer.cs">
+      <DependentUpon>AudioVideoSample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NavigateTo\Canvas.aspx.cs">
+      <DependentUpon>Canvas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NavigateTo\Canvas.aspx.designer.cs">
+      <DependentUpon>Canvas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NavigateTo\CanvasSample.aspx.cs">
+      <DependentUpon>CanvasSample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NavigateTo\CanvasSample.aspx.designer.cs">
+      <DependentUpon>CanvasSample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NavigateTo\DeviceSupport.aspx.cs">
+      <DependentUpon>DeviceSupport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NavigateTo\DeviceSupport.aspx.designer.cs">
+      <DependentUpon>DeviceSupport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NavigateTo\DragDropSample.aspx.cs">
+      <DependentUpon>DragDropSample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NavigateTo\DragDropSample.aspx.designer.cs">
+      <DependentUpon>DragDropSample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NavigateTo\OfflineAppSample.aspx.cs">
+      <DependentUpon>OfflineAppSample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NavigateTo\OfflineAppSample.aspx.designer.cs">
+      <DependentUpon>OfflineAppSample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NavigateTo\WebSocketSample.aspx.cs">
+      <DependentUpon>WebSocketSample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NavigateTo\WebSocketSample.aspx.designer.cs">
+      <DependentUpon>WebSocketSample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NavigateTo\WebStorage.aspx.cs">
+      <DependentUpon>WebStorage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NavigateTo\WebStorage.aspx.designer.cs">
+      <DependentUpon>WebStorage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NavigateTo\DragDrop.aspx.cs">
+      <DependentUpon>DragDrop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NavigateTo\DragDrop.aspx.designer.cs">
+      <DependentUpon>DragDrop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NavigateTo\Forms.aspx.cs">
+      <DependentUpon>Forms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NavigateTo\Forms.aspx.designer.cs">
+      <DependentUpon>Forms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NavigateTo\GeoLocation.aspx.cs">
+      <DependentUpon>GeoLocation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NavigateTo\GeoLocation.aspx.designer.cs">
+      <DependentUpon>GeoLocation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NavigateTo\GeoLocationSample.aspx.cs">
+      <DependentUpon>GeoLocationSample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NavigateTo\GeoLocationSample.aspx.designer.cs">
+      <DependentUpon>GeoLocationSample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NavigateTo\ToolsToStart.aspx.cs">
+      <DependentUpon>ToolsToStart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NavigateTo\ToolsToStart.aspx.designer.cs">
+      <DependentUpon>ToolsToStart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NavigateTo\Introduction.aspx.cs">
+      <DependentUpon>Introduction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NavigateTo\Introduction.aspx.designer.cs">
+      <DependentUpon>Introduction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NavigateTo\MordenizrExample.aspx.cs">
+      <DependentUpon>MordenizrExample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NavigateTo\MordenizrExample.aspx.designer.cs">
+      <DependentUpon>MordenizrExample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NavigateTo\OfflineApp.aspx.cs">
+      <DependentUpon>OfflineApp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NavigateTo\OfflineApp.aspx.designer.cs">
+      <DependentUpon>OfflineApp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NavigateTo\StructureSample.aspx.cs">
+      <DependentUpon>StructureSample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NavigateTo\StructureSample.aspx.designer.cs">
+      <DependentUpon>StructureSample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NavigateTo\Structure.aspx.cs">
+      <DependentUpon>Structure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NavigateTo\Structure.aspx.designer.cs">
+      <DependentUpon>Structure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NavigateTo\TableOfContents.aspx.cs">
+      <DependentUpon>TableOfContents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NavigateTo\TableOfContents.aspx.designer.cs">
+      <DependentUpon>TableOfContents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NavigateTo\WebSocket.aspx.cs">
+      <DependentUpon>WebSocket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NavigateTo\WebSocket.aspx.designer.cs">
+      <DependentUpon>WebSocket.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NavigateTo\WebStorageSample.aspx.cs">
+      <DependentUpon>WebStorageSample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NavigateTo\WebStorageSample.aspx.designer.cs">
+      <DependentUpon>WebStorageSample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NavigateTo\WebWorkers.aspx.cs">
+      <DependentUpon>WebWorkers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NavigateTo\WebWorkers.aspx.designer.cs">
+      <DependentUpon>WebWorkers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NavigateTo\WebWorkersSample.aspx.cs">
+      <DependentUpon>WebWorkersSample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NavigateTo\WebWorkersSample.aspx.designer.cs">
+      <DependentUpon>WebWorkersSample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="offline.appcache" />
+    <None Include="Files\sampleSubtitles.vtt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>9347</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

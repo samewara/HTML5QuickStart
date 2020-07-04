@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="HTML5Samples.SiteMaster" %>
+
+<!DOCTYPE HTML>
+<%--<html lang="en" manifest="<%=ResolveClientUrl("offline.appcache")%>">--%>
+<html lang="en">
+<head>
+<meta charset=utf-8> 
+<meta name="viewport" content = "width=device-width, user-scalable=no">
+<%--<meta name="apple-mobile-web-app-capable" content="yes">--%>
+<title>Sample HTML5 Structure</title>
+<link href="<%=ResolveClientUrl("Styles/Site.css")%>" rel="stylesheet" type="text/css" /> 
+<script type="text/javascript" src="<%=ResolveClientUrl("Scripts/jquery-1.4.1.min.js")%>"></script>
+<script type="text/javascript" src="<%=ResolveClientUrl("Scripts/jquery-1.4.1-vsdoc.js")%>"></script>
+<script type="text/javascript" src="<%=ResolveClientUrl("Scripts/Utilities.js")%>"></script> 
+</head>
+<body>
+<div class="page">
+    <header class="header">
+        <a href="<%=ResolveClientUrl("Default.aspx")%>"><img alt="" class="logo" src="<%=ResolveClientUrl("Images/HTML5LogoSmall.png")%>" /></a>
+        <h1 class="title">HTML5 Quick Start</h1><br/>
+    <nav  class="clear hideSkiplink">
+        <ul>
+            <li><a href="<%=ResolveClientUrl("Default.aspx")%>">Home</a></li>
+            <li><a href="<%=ResolveClientUrl("About.aspx")%>">About</a></li>
+        </ul>
+    </nav>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+        <!-- Breadcrumb Nav -->
+    </asp:ContentPlaceHolder>
+    </header>
+
+    <section id="mainSection" class="main">        
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+          <!-- Main Content -->
+        </asp:ContentPlaceHolder>       
+    </section>
+    <footer class="footer">
+        &copy;Sandeep Mewara 2012
+    </footer>
+</div>
+</body>
+</html>

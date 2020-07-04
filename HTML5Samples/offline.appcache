@@ -1,0 +1,38 @@
+CACHE MANIFEST
+# Cache manifest – version & date
+# version 2.1.24
+# 02.01.2013
+
+
+# Cache – resources to cache with html page
+CACHE:
+Cache-Control: no-cache, private
+Styles/Site.css
+Images/HTML5.png
+Scripts/jquery-1.4.1.min.js 
+Scripts/jquery-1.4.1-vsdoc.js 
+Scripts/Utilities.js 
+Scripts/OfflineApp.js
+offline.manifest
+# Images/HTML5LogoSmall.png
+
+
+
+# Network – files that will not be cached and will always be online
+# Following resources require network connection.
+# * - it’s a special flag to indicate all urls should be whitelisted (meaning all resources that are not cached will require a connection.)
+NETWORK:
+*
+
+
+# Fallback – display for all uncached pages/resources [precedence below Network]
+# FALLBACK:
+Images/ShowFullscreen.png
+#site/images/ images/offline.jpg
+#*.html offline.html
+
+
+
+
+
+
